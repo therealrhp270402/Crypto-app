@@ -1,38 +1,106 @@
-.App {
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 20px;
+  background: linear-gradient(90deg, #1e3c72, #2a5298);
   color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  margin: 0;
+  font-size: 2.5em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.wallet-section {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.connect-btn {
+  background-color: #2a5298;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.connect-btn:hover {
+  background-color: #1e3c72;
+}
+
+.wallet-info p {
+  font-size: 1.1em;
+  margin: 10px 0;
+}
+
+.wallet-info span {
+  font-weight: bold;
+  color: #2a5298;
+}
+
+.ticker-section {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.ticker-section h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.ticker-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.ticker-card {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  width: 18%;
+  text-align: center;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
+}
+
+.ticker-card:hover {
+  transform: translateY(-5px);
+}
+
+.ticker-card h3 {
+  font-size: 1.2em;
+  color: #2a5298;
+  margin: 0;
+}
+
+.ticker-card p {
+  font-size: 1.5em;
+  color: #333;
+  margin: 5px 0 0;
 }
