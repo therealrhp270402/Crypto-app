@@ -27,7 +27,7 @@ cd crypto-wallet-app
 npm install
 
 3. Jalankan Aplikasi
-bash
+```bash
 npm start
 Aplikasi akan berjalan di http://localhost:3000.
 
